@@ -1,0 +1,70 @@
+model:
+  name: "AdaptiveMultiScaleTransformer"
+  num_scales: 4
+  base_layers: 6
+  max_layers: 12
+  hidden_dim: 512
+  num_heads: 8
+  dropout: 0.1
+  temperature: 0.07
+
+training:
+  batch_size: 16
+  learning_rate: 1e-4
+  num_epochs: 100
+  warmup_steps: 1000
+  weight_decay: 1e-5
+  gradient_clip: 1.0
+  save_interval: 10
+
+data:
+  sample_rate: 16000
+  n_fft: 1024
+  hop_length: 256
+  win_length: 1024
+  segment_length: 4.0
+  num_workers: 8
+
+paths:
+  data_root: "./datasets"
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
+  output_dir: "./outputs"
+
+wandb:
+  project: "adaptive-audio-denoising"
+  entity: null
+  tags: ["transformer", "audio", "denoising"]
+
+# Enhancement method selection
+enhancement_method: "transformer"  # Options: transformer, diffusion, hybrid, multitask, lightweight
+
+# Diffusion enhancement parameters
+diffusion:
+  num_steps: 8
+  hidden_dim: 64
+  temperature: 0.07
+
+# Hybrid denoiser parameters
+hybrid:
+  threshold: 0.1
+  controller_hidden_dim: 16
+
+# Multitask enhancement parameters
+multitask:
+  tasks: ["denoise", "dereverb", "declip"]
+  task_weights:
+    denoise: 1.0
+    dereverb: 0.8
+    declip: 0.6
+
+# Lightweight model parameters
+lightweight:
+  hidden_dim: 8
+  num_layers: 2
+
+# Pre-trained audio parameters
+pretrained:
+  model_name: "facebook/wav2vec2-base-960h"
+  use_pretrained_features: false
+  use_pretrained_vocoder: false
