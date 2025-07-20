@@ -6,19 +6,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Key Innovations](#key-innovations)
-- [Data Sources](#data-sources)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Usage](#usage)
-- [Results](#results)
-- [Scientific Rigor](#scientific-rigor)
-
-
-
 ## 🎯 Overview
 
 This repository implements a state-of-the-art audio denoising system using **real-world datasets only** - no synthetic data generation. The system features four key innovations:
