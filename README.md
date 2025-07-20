@@ -16,8 +16,8 @@
 - [Usage](#usage)
 - [Results](#results)
 - [Scientific Rigor](#scientific-rigor)
-- [Citation](#citation)
-- [Contributing](#contributing)
+
+
 
 ## 🎯 Overview
 
@@ -248,22 +248,7 @@ python scripts/inference_real.py \
 - **Unit test coverage** >90%
 - **Integration tests** for all workflows
 
-## 📚 Citation
 
-If you use this code in your research, please cite:
-
-```bibtex
-@article{adaptive_audio_denoising_2024,
-  title={Adaptive Multi-Scale Transformer Networks for Audio Denoising},
-  author={Your Name},
-  journal={arXiv preprint arXiv:2024.XXXXX},
-  year={2024}
-}
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### Development Setup
 ```bash
@@ -294,4 +279,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**⚠️ Important**: This implementation uses **real datasets only**. No synthetic data generation is performed. All results are reproducible with the provided datasets and random seeds.
