@@ -187,7 +187,7 @@ python scripts/inference_real.py \
 
 ## 📈 Results
 
-### Performance Metrics (Real Data)
+### Performance Metrics
 
 | Method | PESQ | STOI | SI-SDR (dB) | SNR (dB) | Parameters (M) |
 |--------|------|------|-------------|----------|----------------|
