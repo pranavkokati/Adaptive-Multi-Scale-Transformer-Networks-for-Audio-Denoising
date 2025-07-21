@@ -6,7 +6,7 @@
 
 ## 🎯 Overview
 
-This repository implements a state-of-the-art audio denoising system using **real-world datasets only** - no synthetic data generation. The system features four key innovations:
+This repository implements a novel audio denoising system using
 
 1. **Dynamic Multi-Scale Noise Characterization**
 2. **Progressive Cross-Modal Attention**
